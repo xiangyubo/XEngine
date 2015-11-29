@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="XEngine">
+      <UniqueIdentifier>{34c0d2b1-6654-46a1-b379-2160c378c866}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XEngine\Header">
+      <UniqueIdentifier>{4a02dc80-0a64-4cd5-93b7-13bbf2fac978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XEngine\Source">
+      <UniqueIdentifier>{77f1d5d9-761a-4097-95a3-998033720063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XEngine\Shader">
+      <UniqueIdentifier>{7fe70c9d-dfbf-41b2-bc60-a8c21e292b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{bb31ecd4-baef-4062-989c-73c3eb3270ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Test\Header">
+      <UniqueIdentifier>{75e16a1a-f6c8-4a93-a4ce-108c1beb8a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XEngine\Etc">
+      <UniqueIdentifier>{28640e7a-1a89-4789-b547-dca4fd1d4262}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="XEngine.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="PreHeader.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSystem.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Test\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball.h">
+      <Filter>Test\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Ship.h">
+      <Filter>Test\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Wall.h">
+      <Filter>Test\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertice.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Effects.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderableThing.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SRVBatch.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyBox.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Skeleton.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="QTree.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Pool.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SmileBoy.h">
+      <Filter>Test\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTexture.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainShader.h">
+      <Filter>XEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScene.h">
+      <Filter>Test\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceCompound.h">
+      <Filter>Test\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Female.h">
+      <Filter>Test\Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSystem.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="XEngine.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Test\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scnen.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertice.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Effects.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SRVBatch.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyBox.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Skeleton.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="QTree.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTexture.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainShader.cpp">
+      <Filter>XEngine\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="shaders\LightShaders.fx">
+      <Filter>XEngine\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\ShadowMap.fx">
+      <Filter>XEngine\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\TestShaders.fx">
+      <Filter>XEngine\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\Vertices.fx">
+      <Filter>XEngine\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\Sky.fx">
+      <Filter>XEngine\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\fire.fx">
+      <Filter>XEngine\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\VisiableTest.fx">
+      <Filter>XEngine\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\Terrain.fx">
+      <Filter>XEngine\Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="etc\shaders.txt">
+      <Filter>XEngine\Etc</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

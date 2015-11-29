@@ -1,0 +1,22 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 5.5 5.5.4.2708 Release
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl Material__1
+Ka 0 0 0
+Kd 0.694118 0.694118 0.694118
+Ks 1 1 1
+illum 2
+Ns 50
+map_Kd tiger.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 

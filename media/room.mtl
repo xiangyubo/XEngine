@@ -1,0 +1,70 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 5.5 5.5.4.2708 Release
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl wallpaper
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+illum 2
+Ns 3.2
+map_Kd wallpaper.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl doors
+Ka 0 0 0
+Kd 0.588235 0.588235 0.588235
+Ks 0 0 0
+illum 2
+Ns 3.2
+map_Kd DoorDiff.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl floor
+Ka 0 0 0
+Kd 0.588235 0.588235 0.588235
+Ks 0 0 0
+illum 2
+Ns 3.2
+map_Kd oldwood.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl texture
+Ka 0 0 0
+Kd 0.588235 0.588235 0.588235
+Ks 0 0 0
+illum 2
+Ns 3.2
+map_Kd FireplaceDiff.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 

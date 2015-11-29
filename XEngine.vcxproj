@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4B1649C9-139B-44A6-9CE3-837F8628D658}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>XEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(DXSDK_DIR)\Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(DXSDK_DIR)\Include;$(DXSDK_DIR)\Samples\C++\Effects11\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)\Lib\x86;$(DXSDK_DIR)\Samples\C++\Effects11\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(DXSDK_DIR)Include;$(DXSDK_DIR)Samples\C++\Effects11\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(DXSDK_DIR)Samples\C++\Effects11\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>lua51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="Female.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Cube.h" />
+    <ClInclude Include="Effects.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="Obj.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="Pool.h" />
+    <ClInclude Include="PreHeader.h" />
+    <ClInclude Include="QTree.h" />
+    <ClInclude Include="Random.h" />
+    <ClInclude Include="RenderableThing.h" />
+    <ClInclude Include="RenderSystem.h" />
+    <ClInclude Include="RenderTexture.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Ship.h" />
+    <ClInclude Include="SkyBox.h" />
+    <ClInclude Include="SmileBoy.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SpaceCompound.h" />
+    <ClInclude Include="SRVBatch.h" />
+    <ClInclude Include="Skeleton.h" />
+    <ClInclude Include="Terrain.h" />
+    <ClInclude Include="TerrainShader.h" />
+    <ClInclude Include="TestScene.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="Vertice.h" />
+    <ClInclude Include="Wall.h" />
+    <ClInclude Include="XEngine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Effects.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Obj.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="QTree.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="RenderSystem.cpp" />
+    <ClCompile Include="RenderTexture.cpp" />
+    <ClCompile Include="Scnen.cpp" />
+    <ClCompile Include="SkyBox.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="SRVBatch.cpp" />
+    <ClCompile Include="Skeleton.cpp" />
+    <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="TerrainShader.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Vertice.cpp" />
+    <ClCompile Include="XEngine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="shaders\fire.fx" />
+    <FxCompile Include="shaders\LightShaders.fx" />
+    <FxCompile Include="shaders\ShadowMap.fx" />
+    <FxCompile Include="shaders\Sky.fx" />
+    <FxCompile Include="shaders\Terrain.fx" />
+    <FxCompile Include="shaders\TestShaders.fx" />
+    <FxCompile Include="shaders\Vertices.fx" />
+    <FxCompile Include="shaders\VisiableTest.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="etc\shaders.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
